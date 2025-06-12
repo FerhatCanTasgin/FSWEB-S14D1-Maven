@@ -13,6 +13,7 @@ import java.lang.reflect.Field;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.instanceOf;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 @ExtendWith(ResultAnalyzer.class)
@@ -100,7 +101,7 @@ public class MainTest {
     @DisplayName("getArea methodu Rectangle sınıfında doğru çalışıyor mu?")
     @Test
     public void testGetAreaRectangle() throws NoSuchFieldException {
-        assertEquals(String.format("%.2f", rectangle.getArea()), "2.00");
+        assertEquals(String.format("%.2f", rectangle.getArea()), "2,00");
     }
 
     @DisplayName("Cuboid sınıf değişkenleri doğru access modifier a sahip mi ?")
@@ -120,7 +121,7 @@ public class MainTest {
     @DisplayName("getVolume methodu Cuboid sınıfında doğru çalışıyor mu?")
     @Test
     public void testGetVolumeRectangle() throws NoSuchFieldException {
-        assertEquals(String.format("%.2f", cuboid.getVolume()), "6.00");
+        assertEquals(String.format("%.2f", cuboid.getVolume()), "6,00");
     }
 
     @DisplayName("Employee sınıf değişkenleri doğru access modifier a sahip mi ?")
